@@ -1,0 +1,51 @@
+.header__fifth {
+    height: 768px;
+    background: url(../img/header5/background.jpg) 100% no-repeat;
+    background-size: cover;
+    font-family: $font-face;
+    font-size: 17px;
+    color: white;
+}
+
+.fifth {
+    width: 66.1%;
+    margin: 0 auto;
+    padding-top: 6.85%;
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &--logo {
+            width: 81px;
+        }
+    }
+
+    &__navigation {
+        width: 57.4%;
+        display: flex;
+        justify-content: space-between;
+
+        &--item {
+
+        }
+    }
+
+    &__title, &__subsection {
+        width: 62%
+    }
+
+    &__title {
+        font-size: 55px;
+        font-weight: bold;
+        margin-top: 7.2%;
+        line-height: 73px;
+    }
+
+    &__subsection {
+        font-size: 22px;
+        margin-top: 5%;
+    }
+    
+}

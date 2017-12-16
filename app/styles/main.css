@@ -53,3 +53,52 @@ body h1 {
 .header__first {
   background-color: green;
   height: 80px; }
+
+.header__fifth {
+  height: 768px;
+  background: url(../img/header5/background.jpg) 100% no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  font-family: Cabin;
+  font-size: 17px;
+  color: white; }
+
+.fifth {
+  width: 66.1%;
+  margin: 0 auto;
+  padding-top: 6.85%; }
+  .fifth__menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .fifth__menu--logo {
+      width: 81px; }
+  .fifth__navigation {
+    width: 57.4%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .fifth__title, .fifth__subsection {
+    width: 62%; }
+  .fifth__title {
+    font-size: 55px;
+    font-weight: bold;
+    margin-top: 7.2%;
+    line-height: 73px; }
+  .fifth__subsection {
+    font-size: 22px;
+    margin-top: 5%; }
