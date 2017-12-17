@@ -1,6 +1,6 @@
-var touches = document.querySelectorAll('.fifth__touch');
-var left = document.querySelector('.fifth__arrow--left');
-var right = document.querySelector('.fifth__arrow--right');
+var touches = document.querySelectorAll('.js-touch__btn');
+var left = document.querySelector('.js-arrow__left');
+var right = document.querySelector('.js-arrow__right');
 var number = 0;
 
 for(var i = 0; i < touches.length; i++) {

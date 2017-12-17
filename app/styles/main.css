@@ -93,6 +93,7 @@ body h1 {
         -ms-flex-pack: justify;
             justify-content: space-between; }
     .fifth__navigation a {
+      text-transform: uppercase;
       color: inherit;
       text-decoration: none;
       font-weight: 600;
@@ -160,6 +161,7 @@ body h1 {
     text-align: center;
     position: absolute;
     cursor: pointer;
+    background-color: transparent;
     top: -webkit-calc(50% - 23px);
     top: calc(50% - 23px); }
     .fifth__arrow i {
