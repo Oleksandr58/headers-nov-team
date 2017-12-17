@@ -53,3 +53,123 @@ body h1 {
 .header__first {
   background-color: green;
   height: 80px; }
+
+.header-second {
+  color: white;
+  padding: 85px 0px 95px 0px;
+  background: #d9c26c;
+  font-family: "Cabin";
+  font-weight: 600;
+  font-size: 16px;
+  height: 372px; }
+
+.header-second-content {
+  max-width: 940px;
+  position: relative;
+  margin: 0 auto;
+  height: 456px; }
+
+.header-second__bars {
+  float: left; }
+
+.header-second__check {
+  display: none; }
+
+.header-second__nav {
+  right: 0;
+  position: absolute; }
+
+.nav__link {
+  margin-left: 40px;
+  text-decoration: none;
+  color: white; }
+
+.header-second__logo {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: 75px; }
+
+.header-second__head {
+  position: absolute;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.72px;
+  text-align: center;
+  top: 180px;
+  width: 100%;
+  font-weight: 400;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.header-second__button {
+  text-decoration: none;
+  color: white;
+  -webkit-border-radius: 24px;
+          border-radius: 24px;
+  background-color: #24aa98;
+  padding: 16px 31px;
+  position: absolute;
+  bottom: 85px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.nav__link:hover, .header-second__button:hover {
+  opacity: 0.8; }
+
+@media (max-width: 550px) {
+  .header-second {
+    padding: 10px 0px;
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+    max-height: 300px; }
+  .header-second-content {
+    max-height: 360px; }
+  .header-second__bars {
+    right: 3px;
+    font-size: 24px;
+    top: 20px;
+    position: absolute; }
+  .header-second__nav {
+    display: none; }
+  .header-second__check:checked + .header-second__nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column wrap;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 70px;
+    width: 100%;
+    position: absolute;
+    z-index: 99; }
+  .nav__link {
+    width: 100%;
+    margin-bottom: 1px;
+    padding: 5px 0px;
+    margin-left: 0;
+    text-align: center;
+    background-color: tomato; }
+  .header-second__logo {
+    position: absolute;
+    left: 50%;
+    top: 0; }
+  .header-second__head {
+    font-size: 24px;
+    top: 75px; }
+  .header-second__button {
+    position: absolute; } }
