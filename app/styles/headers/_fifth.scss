@@ -76,7 +76,8 @@
         position: absolute;
         user-select: none;
         bottom: 45px;
-        left: calc(50% - 98px / 2); // 98px - .fifth__touches width 
+        left: 50%;
+        transform: translateX(-50%)
     }
 
     &__touch {
@@ -108,11 +109,13 @@
         position: absolute;
         cursor: pointer;
         background-color: rgba(0, 0, 0, 0);
-        top: calc(50% - 23px); // 23px - half of .fifth__arrow's height
+        top: 50%; 
+        transform: translateY(-50%);
 
         i {
             position: absolute;
-            top: calc(50% - 12.5px); // 12.5px - half of icon's height
+            top: 50%;
+            transform: translateY(-50%);
         }
 
         &:hover {
@@ -124,7 +127,7 @@
             left: 40px;
 
             i {                
-              left: calc(50% - 5px);  // 5px - half of icon's width
+              left: calc(50% - 6px);  // 5px - half of icon's width
             }
         }
 
@@ -132,7 +135,7 @@
             right: 40px;
 
             i {                
-                right: calc(50% - 5px); // 5px - half of icon's width
+                right: calc(50% - 6px); // 5px - half of icon's width
             }
         }
     }

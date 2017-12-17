@@ -1,17 +1,18 @@
-var touches = document.querySelectorAll('.js-touch__btn');
-var left = document.querySelector('.js-arrow__left');
-var right = document.querySelector('.js-arrow__right');
-var number = 0;
+var touches = document.querySelectorAll('.js-touch__btn'),
+    left = document.querySelector('.js-arrow__left'),
+    right = document.querySelector('.js-arrow__right'),    
+    active = 'fifth__touch--active',
+    number = 0;
 
 for(var i = 0; i < touches.length; i++) {
-    touches[i].addEventListener('click', Click(i));
+    touches[i].addEventListener('click', сlick(i));
 }
 
-function Click(index) {
+function сlick(index) {
     return function (e) {
         number = index;
         clearClasses();
-        this.classList.add('fifth__touch--active');
+        this.classList.add(active);
     }
 }
 
@@ -23,7 +24,7 @@ left.addEventListener('click', function() {
     }
 
     clearClasses();
-    touches[number].classList.add('fifth__touch--active');  
+    touches[number].classList.add(active);  
 } );
 
 right.addEventListener('click', function() {
@@ -34,11 +35,11 @@ right.addEventListener('click', function() {
     }
 
     clearClasses();
-    touches[number].classList.add('fifth__touch--active');  
+    touches[number].classList.add(active);  
 } );
 
 function clearClasses() {    
     for(var j = 0; j < touches.length; j++) {
-        touches[j].classList.remove('fifth__touch--active');
+        touches[j].classList.remove(active);
     }
 }

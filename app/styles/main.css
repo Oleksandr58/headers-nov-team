@@ -135,8 +135,10 @@ body h1 {
         -ms-user-select: none;
             user-select: none;
     bottom: 45px;
-    left: -webkit-calc(50% - 98px / 2);
-    left: calc(50% - 98px / 2); }
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
   .fifth__touch {
     display: inline-block;
     margin: 0 4px;
@@ -162,25 +164,29 @@ body h1 {
     position: absolute;
     cursor: pointer;
     background-color: transparent;
-    top: -webkit-calc(50% - 23px);
-    top: calc(50% - 23px); }
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
     .fifth__arrow i {
       position: absolute;
-      top: -webkit-calc(50% - 12.5px);
-      top: calc(50% - 12.5px); }
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); }
     .fifth__arrow:hover {
       border-color: #cccccc;
       color: #cccccc; }
     .fifth__arrow--left {
       left: 40px; }
       .fifth__arrow--left i {
-        left: -webkit-calc(50% - 5px);
-        left: calc(50% - 5px); }
+        left: -webkit-calc(50% - 6px);
+        left: calc(50% - 6px); }
     .fifth__arrow--right {
       right: 40px; }
       .fifth__arrow--right i {
-        right: -webkit-calc(50% - 5px);
-        right: calc(50% - 5px); }
+        right: -webkit-calc(50% - 6px);
+        right: calc(50% - 6px); }
 
 @media (max-width: 850px) {
   .fifth {
