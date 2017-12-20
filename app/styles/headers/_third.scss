@@ -5,10 +5,11 @@
         display: flex;
         justify-content: space-between;
         height: 100%;
+        border: 2px dashed blue;
 
         &--center {
-            padding-left: 20%;
-            padding-right: 20%;
+            margin-left: 20%;
+            margin-right: 20%;
         }
     }
 }
