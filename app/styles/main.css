@@ -44,12 +44,80 @@ table {
 body h1 {
   color: #FF0000; }
 
-.header {
+.header__fourth {
+  max-width: 1180px;
   width: 100%;
-  height: 30px;
-  margin: 10px 0;
-  background-color: #FF0000; }
-
-.header__first {
-  background-color: green;
-  height: 80px; }
+  height: 100vh;
+  color: #fff;
+  font-family: "Cabin", sans-serif;
+  margin: 0 auto;
+  line-height: 1.5;
+  background: #262626 url("../img/iPhone-bg.png") no-repeat center; }
+  .header__fourth__wrapp {
+    width: 80%;
+    height: 80vh;
+    margin: 0 auto;
+    padding-top: 5%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .header__fourth__nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    @media screen and (max-width: 600px) {
+      .header__fourth__nav {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -webkit-flex-direction: column-reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse; } }
+  .header__fourth__menu {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
+        -ms-flex: 2;
+            flex: 2; }
+  .header__fourth__item {
+    display: inline-block;
+    margin-right: 5%; }
+    .header__fourth__item:nth-child(4) {
+      margin-right: 0; }
+    @media screen and (max-width: 600px) {
+      .header__fourth__item {
+        margin-right: 15px; } }
+  .header__fourth__content {
+    text-align: center; }
+  .header__fourth__link {
+    text-decoration: none;
+    color: #fff; }
+  .header__fourth__button {
+    display: inline-block;
+    background-color: #24aa98;
+    padding: 14px 35px;
+    -webkit-border-radius: 40px;
+            border-radius: 40px;
+    margin-top: 50px; }
+  .header__fourth__title {
+    font-size: 26px; }
+    @media screen and (max-width: 600px) {
+      .header__fourth__title {
+        font-size: 20px; } }
