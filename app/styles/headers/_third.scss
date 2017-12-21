@@ -1,113 +1,136 @@
 .l-grid {
-    width: 100%;
-    
-    &__item {
-        justify-content: space-between;
-        height: 100%;
-        border: 2px dashed blue; // !! Must be removed after finish
+	width: 100%;
+	
+	&__item {
+		justify-content: space-between;
+		height: 100%;
 
-        &--flex {
-            display: flex;
-        }
+		&--flex {
+			display: flex;
+		}
 
-        &--center {
-            margin-left: 20%;
-            margin-right: 20%;
-        }
-    }
+		&--center {
+			margin-left: 20%;
+			margin-right: 20%;
+		}
+	}
 }
 
 .menu {
-    text-align: center;
-    
-    &__item {
-        display: inline-block;
-        margin-right: 5%;
+	text-align: center;
+	
+	&__item {
+		display: inline-block;
+		margin-right: 5%;
 
-        &:last-child {
-            margin-right: 0;
-        }
-    }
+		&:last-child {
+			margin-right: 0;
+		}
+	}
 }
 
-.menu a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: $color--main;
+.menu a, .hamb-menu a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: $color--main;
 }
 
 .hamb-menu {
-    font-size: 130%;
+	font-size: 130%;
 }
 
 .warning {
-    text-align: center;
-    font-size: $font--big;
-    line-height: 1.25;
+	text-align: center;
+	font-size: $font--big;
+	line-height: 1.25;
 }
 
 .form {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 20px;
-    align-items: center;
-    background-color: $color--grey;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+	align-items: center;
+	background-color: $color--grey_lighten;
+	border-radius: 6px;
+	font-family: $font-family;
 
-    &__input {
-        width: 43%;
-        padding-right: 20px;
-        box-sizing: border-box;
-    }
+	&__input {
+		width: 39%;
+		padding-right: 20px;
+		box-sizing: border-box;
+	}
 
-    &__button {
-        width: 14%;
-    }
+	&__button {
+		width: 22%;
+	}
 }
 
 .header {
 
-    &__third {
-        height: auto;
-        background-image: url("../img/bg_third-header.jpg");
-        background-size: cover;
-        min-width: 500px;
-        font-size: $font--main;
-        color: $color--main;
+	&__third {
+		height: auto;
+		background-image: url("../img/bg_third-header.jpg");
+		background-size: cover;
+		min-width: 500px;
+		font-size: $font--main;
+		color: $color--main;
 
-        &--logo {
-            width: 20%;
-            align-self: center;
-            text-align: center;
-        }
+		&--logo {
+			width: 20%;
+			align-self: center;
+			text-align: center;
+		}
 
-        &--menu {
-            padding-top: 80px;
-            padding-bottom: 80px;
-            width: 60%;
-            align-self: center;            
-        }
+		&--menu {
+			padding-top: 80px;
+			padding-bottom: 80px;
+			width: 60%;
+			align-self: center;            
+		}
 
-        &--hamb-menu {
-            width: 20%;
-            align-self: center;            
-            text-align: center;            
-        }
+		&--hamb-menu {
+			width: 20%;
+			align-self: center;            
+			text-align: center;            
+		}
 
-        &--warning {
-            margin-top: 30px;
-            margin-bottom: 110px;
-        }
+		&--warning {
+			margin-top: 30px;
+			margin-bottom: 110px;
+		}
 
-        &--form {
-            margin-bottom: 140px;
-        }
-    }
+		&--form {
+			margin-bottom: 140px;
+		}
+	}
 }
 
 .input {
-    width: 100%;
+	width: 100%;
+	padding: 15px 20px;
+	box-sizing: border-box;
+	border: 2px solid $color--grey;
+	border-radius: 6px;
+	font-family: inherit;
+	font-size: inherit;
+
+	@include placeholder {
+		color: $color--grey;
+	}
 }
 
 .button {
-    width: 100%;
+	padding: 15px 5px;
+	width: 100%;
+	background-color: $color--blue;
+	border: none;
+	border-radius: 6px;
+	font-family: inherit;
+	font-size: inherit;
+	color: $color--white;
+
+	&:hover {
+		opacity: 0.8;
+		cursor: pointer;
+	}
 }
