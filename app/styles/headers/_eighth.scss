@@ -1,3 +1,8 @@
+$nav_dark: #c6ccd2;
+$nav_bg: #f2f5f8;
+$nav_text-color: #383737;
+$button_bg: #f78d78;
+
 .header__eighth{
     background-image: url(../img/eighth.png);
     background-repeat: no-repeat;
@@ -32,7 +37,7 @@
         border-radius: 60px;
         height: 60px;
         border: none;
-        background-color: #db7560;
+        background-color: $button_bg;
         padding: 0 72px;
         transition: 0.2s;
         cursor: pointer;
@@ -40,15 +45,15 @@
 
         &:hover{
             transform: scale(1.1);
-            background-color: #f78d78;
+            background-color: $button_bg;
         }
     }
 
     .nav{
         display: flex;
         justify-content: space-between;
-        color: #383737;
-        background-color: #f2f5f8;
+        color: $nav_text-color;
+        background-color: $nav_bg;
         padding: 16px 20px;
         border-radius: 4px;
         max-width: 100%;
@@ -76,7 +81,7 @@
     }
 
     .form-group{
-        color: #c6ccd2;
+        color: $nav_dark;
         position: relative;
 
         &__icon{
@@ -128,7 +133,7 @@
 
     .text-input{
         height: 36px;
-        border: 2px solid #c6ccd2;
+        border: 2px solid $nav_dark;
         border-radius: 36px;
         padding: 0 18px 0 36px;
         outline: none;
@@ -136,7 +141,7 @@
         box-sizing: border-box;
 
         &::placeholder{
-            color: #c6ccd2;
+            color: $nav_dark;
         }
     }
 
