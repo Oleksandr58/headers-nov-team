@@ -77,4 +77,8 @@ gulp.task('build', ['clean', 'nunjucks', 'scss', 'img'], function() {
 
 	 var buildFontAwesome = gulp.src('app/font-awesome/**/*') // Переносим шрифты в продакшен
     .pipe(gulp.dest('docs/font-awesome'))
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> a6ecad0a0eff6490c2f096f17cd55fd39d955e0b
