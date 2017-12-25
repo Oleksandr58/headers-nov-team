@@ -7,7 +7,8 @@ var gulp        = require('gulp'),
 	del         = require('del'),
 	imagemin    = require('gulp-imagemin'),
 	pngquant    = require('imagemin-pngquant'),
-	autoprefixer= require('gulp-autoprefixer');
+	autoprefixer= require('gulp-autoprefixer'),
+	nunjucks = require('gulp-nunjucks');
 
 gulp.task('scss', function() {
 	return gulp.src('app/styles/main.scss')
@@ -37,6 +38,13 @@ gulp.task('img', function(){
 	.pipe(gulp.dest('docs/img'));
 });
 
+gulp.task('nunjucks', function () {
+	return gulp.src('app/templates/index.html')
+		.pipe(nunjucks.compile())
+		.pipe(gulp.dest('app'))
+		.pipe(browserSync.reload({ stream: true }))
+});
+
 gulp.task('browser-sync', function(){
 	browserSync({
 		server: {
@@ -50,14 +58,14 @@ gulp.task('clean', function(){
 	return del.sync('docs');
 });
 
-
-gulp.task('watch', ['browser-sync', 'scss'], function() {
+gulp.task('watch', ['browser-sync', 'nunjucks', 'scss'], function() {
 	gulp.watch('app/styles/**/*.scss', ['scss']);
-	gulp.watch('app/index.html', browserSync.reload);
+	gulp.watch('app/templates/*.html', ['nunjucks', browserSync.reload]);
+	// gulp.watch('app/index.html', browserSync.reload);
 	gulp.watch('app/styles/**/*.css', browserSync.reload);
 });
 
-gulp.task('build', ['clean', 'scss', 'img'], function() {
+gulp.task('build', ['clean', 'nunjucks', 'scss', 'img'], function() {
 	var buildHtml = gulp.src('app/**/*.html')
 	.pipe(gulp.dest('docs'));
 	
@@ -69,6 +77,4 @@ gulp.task('build', ['clean', 'scss', 'img'], function() {
 
 	 var buildFontAwesome = gulp.src('app/font-awesome/**/*') // Переносим шрифты в продакшен
     .pipe(gulp.dest('docs/font-awesome'))
-	
-	
 });
