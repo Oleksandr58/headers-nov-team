@@ -1,8 +1,6 @@
 .DS_Store
 node_modules/
 package-lock.json
-<<<<<<< HEAD
 app/index.html
 app/styles/main.css
-=======
->>>>>>> a6ecad0a0eff6490c2f096f17cd55fd39d955e0b
+
