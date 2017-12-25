@@ -61,15 +61,15 @@ left: 50%;
 transform: translateX(-50%);
 }}
 
-.nav__item{
+.header-second .nav__item{
 margin-left: 40px;
 display: inline-block;
 }
 
-.nav__link{
+.header-second .nav__link{
 text-decoration: none;
 color: white;
 }
-.nav__link:hover, .header-second__button:hover{
+.header-second .nav__link:hover, .header-second__button:hover{
 opacity: 0.8;}
 
