@@ -8,3 +8,8 @@
 @import "headers/fourth";
 @import "headers/fifth";
 @import "headers/eighth";
+
+.header {
+	margin-bottom: 50px;
+	font-family: $font-family;
+}
