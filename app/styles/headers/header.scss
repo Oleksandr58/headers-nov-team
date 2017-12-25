@@ -1,6 +1,6 @@
 // global styles and imports for all the footers
 
-.header {
+.header:not(.header__fifth) {
 	width: 100%;
 	height: 30px;
 	margin: 10px 0;
@@ -9,5 +9,6 @@
 
 @import "headers/first";
 @import "headers/second";
+@import "headers/fifth";
 @import "headers/breakpoints-second";
 @import "headers/eighth";
