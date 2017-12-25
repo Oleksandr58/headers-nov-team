@@ -3,6 +3,12 @@ node_modules/
 <<<<<<< HEAD
 # package-lock.json
 package-lock.json
+<<<<<<< HEAD
 =======
 package-lock.json
 >>>>>>> a6ecad0a0eff6490c2f096f17cd55fd39d955e0b
+=======
+app/index.html
+app/styles/main.css
+
+>>>>>>> 79487c4db5d7a93eda8dfe4b5d8c42715289aa5a
