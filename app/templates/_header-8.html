@@ -1,7 +1,9 @@
+
 <div class="container">
     <nav class="nav">
-        <div class="wrapper">
-            <a href="#" class="nav__item"><img src="img/ui-logo.svg" alt="UI logo" width="45" height="45"></a>
+        <div class="wrapper" id="h_8_wrapper">
+            <a href="#" class="nav__item nav__item--logo"><img src="img/ui-logo.svg" alt="UI logo" width="45" height="45"></a>
+            <span class="nav__item icon-menu mobile-menu-close" onclick="hideMobile_8()"></span>
             <a href="#" class="nav__item">Home</a>
             <a href="#" class="nav__item">Portfolio</a>
             <a href="#" class="nav__item">Products</a>
@@ -9,6 +11,7 @@
             <a href="#" class="nav__item">About Us</a>
             <a href="#" class="nav__item">Contact</a>
         </div>
+        <span class="icon-menu mobile-button" onclick="showMobile_8()"></span>
         <form class="nav__search-form">
             <div class="form-group">
                 <i class="icon-search form-group__icon"></i>
@@ -41,3 +44,11 @@
         </div>
     </div>
 </div>
+<script>
+    function showMobile_8(){
+        document.querySelector(".header__eighth .nav #h_8_wrapper").style.display = "block";
+    };
+    function hideMobile_8(){
+        document.querySelector(".header__eighth .nav #h_8_wrapper").style.display = "none";
+    }
+</script>
