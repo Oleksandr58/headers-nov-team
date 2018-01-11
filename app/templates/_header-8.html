@@ -46,9 +46,10 @@
 </div>
 <script>
     function showMobile_8(){
-        document.querySelector(".header__eighth .nav #h_8_wrapper").style.display = "block";
+        let a = document.querySelector(".header__eighth .nav #h_8_wrapper");
+        a.classList.add("wrapper--hidden");
     };
     function hideMobile_8(){
-        document.querySelector(".header__eighth .nav #h_8_wrapper").style.display = "none";
+        document.querySelector(".header__eighth .nav #h_8_wrapper").classList.remove("wrapper--hidden");
     }
 </script>
