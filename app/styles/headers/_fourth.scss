@@ -1,5 +1,4 @@
 .header__fourth {
-    max-width: 1180px;
     width: 100%;
     color: #fff;
     font-family: $font;
@@ -8,6 +7,7 @@
     background: #262626;
         &__wrapp {
             width: 80%;
+            max-width: 1180px;
             margin: 0 auto;
             padding-top: 65px;
             padding-bottom: 80px;
