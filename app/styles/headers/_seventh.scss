@@ -1,7 +1,6 @@
 $text__color: rgb(234, 246, 255);
 
 %item__number {
-    position: absolute;
     font-size: 16px;
 }
 
@@ -11,28 +10,21 @@ $text__color: rgb(234, 246, 255);
 }
 
 .header__seventh {
+    position: relative;
     width: 100%;
     margin: 0;
     padding: 0;
     background-image: url("../img/theventh__header--background.png");
-    background-size: 100%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    padding: 4% 10% 0% 16%;
+    background-size: cover;
     font-family: $font-face;
-    font-size: 100%;
+    font-size: 14px;
+    color: $color--white;
 }
 
 ul li {
     list-style: none; 
     display: inline-block;
     padding-right: 60px;
-}
-
-.menu .menu__items {
-    float: right;
-    width: 55%;
-    font-size: 14px;
 }
 
 .nav__link {
@@ -42,7 +34,6 @@ ul li {
 }
 
 .text__theme {
-    line-height: 0;
     font-size: 50px;
     color: $color--grey_lighten;
     @extend %text;
@@ -91,7 +82,5 @@ ul li {
 }
 
 .down-button {
-    position: fixed;
-    bottom: 100px;
-    left: 50%;
+    text-align: center;
 }
