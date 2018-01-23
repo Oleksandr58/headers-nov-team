@@ -1,7 +1,7 @@
 FE-November Team: Page with Headers
 ===============
 
-Production: [`https://mateacademy-fe-july.github.io/headers-nov-team/`](https://mateacademy-fe-july.github.io/headers-nov-team/)
+Production: [`https://mateacademy-fe-july.github.io/headers-nov-team/`](https://oleksandr58.github.io/headers-nov-team/docs/index.html)
 
 Prerequisites
 -------------
