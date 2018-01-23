@@ -7,9 +7,14 @@
 @import "headers/third";
 @import "headers/fourth";
 @import "headers/fifth";
+@import "headers/seventh";
 @import "headers/eighth";
 
 .header {
 	margin-bottom: 50px;
 	font-family: $font-family;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }

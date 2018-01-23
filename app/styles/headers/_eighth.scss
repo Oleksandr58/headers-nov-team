@@ -26,6 +26,7 @@ $button_bg: #f78d78;
         max-width: 100%;
         padding: 0 20px;
         margin: 0 auto;
+        box-sizing: border-box;
     }
 
     .action-btn{
@@ -106,6 +107,7 @@ $button_bg: #f78d78;
     .services{
         margin-top: 90px;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
@@ -126,7 +128,7 @@ $button_bg: #f78d78;
 
             .icon{
                 position: absolute;
-                left: -35px;
+                left: -45px;
             }
         }
     }
@@ -148,5 +150,75 @@ $button_bg: #f78d78;
     .wrapper{
         display: flex;
         justify-content: center;
+    }
+
+    .mobile-button{
+        margin-top: 7px;
+        display: none;
+    }
+
+    .mobile-menu-close{
+        display: none;
+    }
+}
+
+@media all and (max-width: 990px) {
+    .header__eighth{
+        .nav{
+    
+            &__item{
+                margin-left: 20px;
+            }
+        }
+    
+        .heading{
+            margin-top: 50px;
+            font-size: 50px;
+        }
+    
+        .service__item{
+            margin-bottom: 20px;
+    
+            &:first-child{
+                margin-left: 75px;
+            }
+        }
+    }
+}
+@media all and (max-width: 745px) {
+    .header__eighth{
+        .nav{
+            position: relative;
+
+            .wrapper{
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 999;
+                background-color: rgba($color: #000000, $alpha: 0.8);
+
+                &--hidden{
+                    display: block;
+                }
+
+                .nav__item{
+                    display: block;
+                    font-size: 24px;
+                    text-align: center;
+                    color: #fff;
+                    margin-top: 25px;
+
+                    &--logo{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .mobile-button{
+            display: inline;
+        }
     }
 }

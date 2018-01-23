@@ -1,5 +1,6 @@
 .l-grid {
-	width: 100%;
+	max-width: 1180px;
+	margin: 0 auto;
 	
 	&__item {
 		justify-content: space-between;
@@ -49,7 +50,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	padding: 10px;
-	align-items: center;
+	justify-content: center;
 	background-color: $color--grey_lighten;
 	border-radius: 6px;
 	font-family: $font-family;
@@ -71,7 +72,6 @@
 		height: auto;
 		background-image: url("../img/bg_third-header.jpg");
 		background-size: cover;
-		min-width: 500px;
 		font-size: $font--main;
 		color: $color--main;
 
